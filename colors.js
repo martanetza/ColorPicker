@@ -141,6 +141,21 @@ function calculateHarmonies(h, s, l) {
         20},${s}%,${l + 10}%)`;
     }
 
+    if (document.querySelector("select").value == "Shades") {
+      document.getElementById(
+        "0"
+      ).style.backgroundColor = `hsl(${h},${s}%,${l}%)`;
+
+      document.getElementById("1").style.backgroundColor = `hsl(${h},${s -
+        30}%,${l}%)`;
+      document.getElementById("2").style.backgroundColor = `hsl(${h},${s -
+        40}%,${l}%)`;
+      document.getElementById("3").style.backgroundColor = `hsl(${h},${s -
+        50}%,${l}%)`;
+      document.getElementById("4").style.backgroundColor = `hsl(${h},${s -
+        60}%,${l}%)`;
+    }
+
     readRGBcolors("text0", "0");
     readRGBcolors("text1", "1");
     readRGBcolors("text2", "2");
